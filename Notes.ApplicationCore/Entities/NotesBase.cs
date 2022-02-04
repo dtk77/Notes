@@ -1,10 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Notes.ApplicationCore
+namespace Notes.ApplicationCore.Entities
 {
-    internal abstract class NotesBase
+    public class NotesBase
     {
-        public abstract DateTime CreatData { get; set; }
-        public abstract DataType? EditDate { get; set; }
+        public  DateTime CreatData { get; set; }
+        public DataType? EditDate { get; set; }
     }
 }

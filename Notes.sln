@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notes.ApplicationCore", "Notes.ApplicationCore\Notes.ApplicationCore.csproj", "{B176A0C2-C4F6-4271-B2A2-D32F83992E7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notes.ApplicationCore", "Notes.ApplicationCore\Notes.ApplicationCore.csproj", "{B176A0C2-C4F6-4271-B2A2-D32F83992E7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notes.Infrastructure", "Notes.Infrastructure\Notes.Infrastructure.csproj", "{ED0699F4-F3FB-4484-A62E-7FE380D2FB7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notes.Infrastructure", "Notes.Infrastructure\Notes.Infrastructure.csproj", "{ED0699F4-F3FB-4484-A62E-7FE380D2FB7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notes.WebApi", "Notes.WebApi\Notes.WebApi.csproj", "{2690F343-EE61-4A4B-97AE-1F1784EB10BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{ED0699F4-F3FB-4484-A62E-7FE380D2FB7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED0699F4-F3FB-4484-A62E-7FE380D2FB7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED0699F4-F3FB-4484-A62E-7FE380D2FB7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2690F343-EE61-4A4B-97AE-1F1784EB10BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2690F343-EE61-4A4B-97AE-1F1784EB10BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2690F343-EE61-4A4B-97AE-1F1784EB10BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2690F343-EE61-4A4B-97AE-1F1784EB10BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

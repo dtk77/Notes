@@ -5,17 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Notes.ApplicationCore
+namespace Notes.ApplicationCore.Entities
 {
-    internal class Notes : NotesBase
+    public class Note : NotesBase
     {
         public Guid ID { get; set; }
         public string Title { get; set; }
         public string Details { get; set; }
-        public override DateTime CreatData { get; set; }
-        public override DataType? EditDate { get; set; }
 
-       
         public Guid UserId { get; set; }
+
     }
 }
