@@ -1,12 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Notes.ApplicationCore.Interface;
 using Notes.ApplicationCore.Entities;
 using Notes.Infrastructure.Data.Configuration;
+using Notes.ApplicationCore.Interface;
+
 
 namespace Notes.Infrastructure.Data
 {
-	public class NotesDbContext : DbContext, INotesDbContext
-	{
+    public class NotesDbContext : DbContext, INotesDbContext
+    {
 		public NotesDbContext(DbContextOptions<NotesDbContext> options)
 			: base(options) { }
 		public DbSet<Note> Notes { get; set; }
@@ -16,5 +17,7 @@ namespace Notes.Infrastructure.Data
 			builder.ApplyConfiguration(new NoteConfiguration());
 			base.OnModelCreating(builder);
 		}
-	}
+    }
 }
+
+

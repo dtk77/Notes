@@ -4,7 +4,7 @@ namespace Notes.ApplicationCore.Entities
 {
     public class NotesBase
     {
-        public  DateTime CreatData { get; set; }
-        public DataType? EditDate { get; set; }
+        public  DateTime CreateData { get; set; }
+        public DateTime? EditDate { get; set; }
     }
 }
