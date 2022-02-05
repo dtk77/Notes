@@ -13,14 +13,13 @@ namespace Notes.ApplicationCore.Notes.Commands
 		public async Task<Guid> Handle(CreateNoteCommand request,
 			CancellationToken cancellationToken)
 		{
-			
 			var note = new Note
 			{
 				ID = Guid.NewGuid(),
 				Title = request.Title,
 				Details = request.Details,
 				UserId = request.UserId,
-				CreateData = DateTime.Now,
+				CreateDate = DateTime.Now,
 				EditDate = null
 			};
 			await _dbContext.Notes.AddAsync(note, cancellationToken);
