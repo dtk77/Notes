@@ -13,11 +13,16 @@ namespace Notes.ApplicationCore.Notes.Queries
         private readonly INotesDbContext _dbContext;
         private readonly IMapper _mapper;
 
-        public async Task<NoteDetailsViewModel> Handle(GetNoteDetailsQuery request, CancellationToken cancellationToken)
+        public GetNoteDetailsQueryHandler(INotesDbContext dbContext,
+           IMapper mapper) => (_dbContext, _mapper) = (dbContext, mapper);
+
+        public async Task<NoteDetailsViewModel> Handle(GetNoteDetailsQuery request,
+            CancellationToken cancellationToken)
         {
             var entity = await _dbContext.Notes.
                 FirstOrDefaultAsync(note =>
                 note.ID == request.ID, cancellationToken);
+
             if(entity == null || entity.UserId != entity.UserId)
             {
                 throw new NotFoundException(nameof(Note), request.ID);
